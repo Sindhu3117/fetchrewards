@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.683 sec <<< FAILURE!
+careerTraverseFromBrandsPage(pages.BrandsPage)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at utils.Utils.clickCareersElement(Utils.java:43)
+	at pages.BrandsPage.careerTraverseFromBrandsPage(BrandsPage.java:26)
+
+careerTraverseFromHowitWorksPage(pages.HowItWorksPage)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at utils.Utils.clickCareersElement(Utils.java:43)
+	at pages.HowItWorksPage.careerTraverseFromHowitWorksPage(HowItWorksPage.java:24)
+
+careerTraverseFromInvitePage(pages.InviteFriendsPage)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at utils.Utils.clickCareersElement(Utils.java:43)
+	at pages.InviteFriendsPage.careerTraverseFromInvitePage(InviteFriendsPage.java:28)
+
+careerTraverseFromRewardsPage(pages.RewardsPage)  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: null
+	at utils.Utils.clickCareersElement(Utils.java:43)
+	at pages.RewardsPage.careerTraverseFromRewardsPage(RewardsPage.java:25)
+

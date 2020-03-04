@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]">
+  <test thread-count="5" verbose="0" name="test1(failed)">
+    <groups>
+      <run>
+        <include name="careerPageTraversal"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pages.RewardsPage">
+        <methods>
+          <include name="careerTraverseFromRewardsPage"/>
+        </methods>
+      </class> <!-- pages.RewardsPage -->
+      <class name="pages.BrandsPage">
+        <methods>
+          <include name="careerTraverseFromBrandsPage"/>
+        </methods>
+      </class> <!-- pages.BrandsPage -->
+      <class name="pages.HowItWorksPage">
+        <methods>
+          <include name="careerTraverseFromHowitWorksPage"/>
+        </methods>
+      </class> <!-- pages.HowItWorksPage -->
+      <class name="pages.InviteFriendsPage">
+        <methods>
+          <include name="careerTraverseFromInvitePage"/>
+        </methods>
+      </class> <!-- pages.InviteFriendsPage -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
