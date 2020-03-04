@@ -32,6 +32,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1Ydoc0h4aRCV5Fg2lkroWsUKjix" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
@@ -88,17 +89,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InviteFriendsPage.careerTraverse" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CareerPageTraversal.helpToCareer" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="referrals" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pages.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pages" />
-      <option name="MAIN_CLASS_NAME" value="pages.InviteFriendsPage" />
-      <option name="METHOD_NAME" value="careerTraverse" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CareerPageTraversal" />
+      <option name="METHOD_NAME" value="helpToCareer" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CareerPageTraversal.homeToCareer" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="referrals" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.CareerPageTraversal" />
+      <option name="METHOD_NAME" value="homeToCareer" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -127,9 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/rsbri/Documents/referrals/testng.xml" />
+        <item itemvalue="TestNG.CareerPageTraversal.helpToCareer" />
+        <item itemvalue="TestNG.CareerPageTraversal.homeToCareer" />
         <item itemvalue="TestNG.CareerPageTraversal.careerTraverseFromInvitePage" />
         <item itemvalue="TestNG.InviteFriendsPage.careerTraverseFromInvitePage" />
-        <item itemvalue="TestNG.InviteFriendsPage.careerTraverse" />
       </list>
     </recent_temporary>
   </component>
@@ -145,5 +165,16 @@
       <updated>1583281907522</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

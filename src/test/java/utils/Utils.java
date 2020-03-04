@@ -71,10 +71,16 @@ public class Utils {
         return prop.getProperty(property);
     }
 
-//    public static void clickElement(String locator, WebDriver driver){
-//        WebElement element = driver.findElement(By.xpath(locator));
-//        element.click();
-//    }
+    public static void clickElement(String locator, WebDriver driver) throws IOException {
+        driver.manage().timeouts().pageLoadTimeout(5,TimeUnit.SECONDS);
+        InputStream locatorFile = new FileInputStream("src\\test\\java\\locators\\locators.properties");
+        Properties prop = new Properties();
+        prop.load(locatorFile);
+        String xpath = prop.getProperty(locator);
+        System.out.println("********xpath: "+xpath);
+        WebElement element = driver.findElement(By.xpath(xpath));
+        element.click();
+    }
 
     public static Boolean validateURL(WebDriver driver) throws IOException {
         String careerURL = driver.getCurrentUrl();

@@ -16,7 +16,7 @@ public class InviteFriendsPage {
     static WebDriver inviteFriendsDriver=null;
 
 
-    public WebDriver setBrowser() throws IOException {
+    public static WebDriver setBrowser() throws IOException {
         String browser = Utils.getConfig("chromebrowser");
         String url = Utils.getConfig("invitefriends");
         inviteFriendsDriver = Utils.setUp(browser, url);
@@ -29,6 +29,16 @@ public class InviteFriendsPage {
         inviteFriendsDriver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
         Assert.assertTrue(Utils.validateURL(inviteFriendsDriver), "careers page not found");
     }
+
+    @Test(groups = "careerPageTraversal")
+    public void careerTraverseFromInvitePageviaHomePage() throws Exception {
+        Utils.clickCareersElement();
+        inviteFriendsDriver.manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
+        Assert.assertTrue(Utils.validateURL(inviteFriendsDriver), "careers page not found");
+    }
+
+    //Open Career page from
+
 
 
 
